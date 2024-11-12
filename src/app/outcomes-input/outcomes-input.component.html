@@ -39,7 +39,8 @@
               (change)= "predictedOutcomes[rowIndex][colIndex] < 0 ? predictedOutcomes[rowIndex][colIndex] = 0 : predictedOutcomes[rowIndex][colIndex]; predictedOutcomes[rowIndex][colIndex] > 20 ? predictedOutcomes[rowIndex][colIndex] = 20 : predictedOutcomes[rowIndex][colIndex];" 
               [ngClass]="{
                 'redVal' : predictedOutcomes[rowIndex][colIndex] >= 0 && predictedOutcomes[rowIndex][colIndex] < 6,
-                'yellowVal' : predictedOutcomes[rowIndex][colIndex] >= 6 && predictedOutcomes[rowIndex][colIndex] < 14,
+                'orangeVal' : predictedOutcomes[rowIndex][colIndex] >= 6 && predictedOutcomes[rowIndex][colIndex] < 10,
+                'yellowVal' : predictedOutcomes[rowIndex][colIndex] >= 10 && predictedOutcomes[rowIndex][colIndex] < 14,
                 'greenVal' : predictedOutcomes[rowIndex][colIndex] >= 14 && predictedOutcomes[rowIndex][colIndex] < 20,
                 'blueVal' : predictedOutcomes[rowIndex][colIndex] >= 20
              }" required>
@@ -49,6 +50,6 @@
       </tbody>
     </table>
 
-    <button type="submit">Set Predicted Outcomes & Optimize Pairings</button>
+    <button type="submit">Optimize Pairings</button>
   </form>
 </div>
